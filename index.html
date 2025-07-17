@@ -6,28 +6,6 @@
   <title>VendeIA - Soluciones para ventas por WhatsApp</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-<script>
-  window.addEventListener('mouseover', initLandbot, { once: true });
-  window.addEventListener('touchstart', initLandbot, { once: true });
-  var myLandbot;
-  function initLandbot() {
-    if (!myLandbot) {
-      var s = document.createElement('script');
-      s.type = "module";
-      s.async = true;
-      s.addEventListener('load', function() {
-        myLandbot = new Landbot.Livechat({
-          configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-3052304-Z4PRZHAOWQ6MXFNG/index.json',
-        });
-      });
-      s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs';
-      var x = document.getElementsByTagName('script')[0];
-      x.parentNode.insertBefore(s, x);
-    }
-  }
-</script>
-
-    
     body { margin: 0; font-family: 'Inter', sans-serif; background: #f9f9f9; color: #1f2937; }
     header {
       background: linear-gradient(135deg, #10b981, #059669);
@@ -35,8 +13,7 @@
       padding: 80px 20px;
       text-align: center;
     }
-    header <img src="vendeia_logo.png" alt="Logo VendeIA" style="height: 300px; margin-bottom: 20px;" />
-h1 {
+    header h1 {
       font-size: 2.8rem;
       margin-bottom: 20px;
     }
@@ -157,6 +134,28 @@ h1 {
 </footer>
 
 <a href="https://wa.me/34658545910" target="_blank" class="whatsapp-button">💬 Chatea con nosotros</a>
+
+<!-- Landbot Livechat -->
+<script>
+  window.addEventListener('mouseover', initLandbot, { once: true });
+  window.addEventListener('touchstart', initLandbot, { once: true });
+  var myLandbot;
+  function initLandbot() {
+    if (!myLandbot) {
+      var s = document.createElement('script');
+      s.type = "module";
+      s.async = true;
+      s.addEventListener('load', function() {
+        myLandbot = new Landbot.Livechat({
+          configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-3052304-Z4PRZHAOWQ6MXFNG/index.json',
+        });
+      });
+      s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs';
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+  }
+</script>
 
 </body>
 </html>
