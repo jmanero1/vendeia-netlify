@@ -21,6 +21,26 @@
       header img { height: 80px; }
     }
   </style>
+  .how-it-works {
+  background: #fff; padding: 40px 20px; text-align: center;
+}
+.how-it-works ol { list-style: none; counter-reset: step; max-width: 600px; margin: auto; padding: 0; }
+.how-it-works li {
+  counter-increment: step;
+  margin: 20px 0;
+  text-align: left;
+}
+.how-it-works li::before {
+  content: counter(step);
+  display: inline-block;
+  background: #10b981;
+  color: white;
+  width: 30px; height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
 </head>
 
   <!-- Botón flotante de WhatsApp -->
