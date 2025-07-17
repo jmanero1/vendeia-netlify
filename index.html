@@ -7,7 +7,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     body { font-family: 'Inter', sans-serif; margin: 0; background: #f9f9f9; color: #333; }
-    header { background-color: #1f2937; color: white; padding: 40px 20px; text-align: center; }
+    header { background-color: #1f2937; color: white; padding: 40px 20px; text-align: center; position: relative; }
+    header img { height: 60px; position: absolute; top: 20px; left: 20px; }
     header h1 { margin: 0; font-size: 2.5em; }
     header p { font-size: 1.2em; margin-top: 10px; }
     section { max-width: 800px; margin: auto; padding: 40px 20px; }
@@ -16,12 +17,13 @@
     .cta { background-color: #10b981; color: white; padding: 30px 20px; text-align: center; border-radius: 12px; }
     .cta a { background: white; color: #10b981; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 600; display: inline-block; margin-top: 15px; }
     footer { text-align: center; font-size: 0.9em; color: #777; margin: 40px 0; }
-    @media (max-width: 600px) { .features { grid-template-columns: 1fr; } }
+    @media (max-width: 600px) { .features { grid-template-columns: 1fr; } header img { position: static; display: block; margin: 0 auto 20px; } }
   </style>
 </head>
 <body>
 
   <header>
+    <img src="vendeia_logo.png" alt="VendeIA Logo" />
     <h1>VendeIA</h1>
     <p>Tu nuevo vendedor por WhatsApp, funcionando 24/7 con inteligencia artificial.</p>
   </header>
