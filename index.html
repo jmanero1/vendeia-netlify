@@ -91,11 +91,12 @@
       border-radius: 15px; /* Bordes curvados */
     }
 
+    /* Bocadillo de conversación */
     .speech-bubble {
       position: absolute;
       top: 50%;
-      left: 50%; /* Centra el bocadillo en la parte derecha */
-      transform: translateY(-50%) translateX(30%); /* Mueve el bocadillo a la derecha desde la imagen */
+      left: 105%; /* Coloca el bocadillo a la derecha de la imagen */
+      transform: translateY(-50%);
       background-color: #f1f5f9; /* Color gris */
       padding: 12px 20px;
       border-radius: 12px;
@@ -115,6 +116,36 @@
       border-style: solid;
       border-color: transparent #f1f5f9 transparent transparent;
       transform: translateY(-50%);
+    }
+
+    /* BIG QUESTION */
+    .big-question {
+      text-align: center;
+      padding: 60px 20px;
+      background: #ffffff;
+    }
+    .big-question h2 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #0E9384;
+      line-height: 1.3;
+      margin-bottom: 20px;
+    }
+    .big-question .cta-button {
+      background: #0E9384;
+      color: white;
+      font-size: 1.2rem;
+      padding: 16px 32px;
+    }
+
+    @media (max-width: 768px) {
+      .hero-text h1 {
+        font-size: 1.5rem;
+      }
+
+      .big-question h2 {
+        font-size: 2rem;
+      }
     }
 
     /* PAIN POINTS */
@@ -215,25 +246,25 @@
 <section class="big-question">
   <h2>¿Quieres mejorar la comunicación con tus clientes?</h2>
   <a href="https://wa.me/34658545910" class="cta-button">¡Sí, quiero mejorarla!</a>
-  
-  <!-- Problemas -->
-  <div class="pain-points">
-    <div class="pain-box">
-      <img src="https://img.icons8.com/ios-filled/50/4b5563/conference-call.png" alt="Clientes frustrados">
-      <p>Clientes frustrados por falta de respuesta inmediata</p>
-    </div>
-    <div class="pain-box">
-      <img src="https://img.icons8.com/ios-filled/50/4b5563/banknotes.png" alt="Costes elevados">
-      <p>Costes elevados en atención al cliente</p>
-    </div>
-    <div class="pain-box">
-      <img src="https://img.icons8.com/ios-filled/50/4b5563/chat.png" alt="Gestión difícil">
-      <p>Dificultad para gestionar múltiples conversaciones a la vez</p>
-    </div>
-    <div class="pain-box">
-      <img src="https://img.icons8.com/ios-filled/50/4b5563/cancel.png" alt="Pérdida de oportunidades">
-      <p>Pérdida de oportunidades por falta de seguimiento</p>
-    </div>
+</section>
+
+<!-- Problemas -->
+<section class="pain-points">
+  <div class="pain-box">
+    <img src="https://img.icons8.com/ios-filled/50/4b5563/conference-call.png" alt="Clientes frustrados">
+    <p>Clientes frustrados por falta de respuesta inmediata</p>
+  </div>
+  <div class="pain-box">
+    <img src="https://img.icons8.com/ios-filled/50/4b5563/banknotes.png" alt="Costes elevados">
+    <p>Costes elevados en atención al cliente</p>
+  </div>
+  <div class="pain-box">
+    <img src="https://img.icons8.com/ios-filled/50/4b5563/chat.png" alt="Gestión difícil">
+    <p>Dificultad para gestionar múltiples conversaciones a la vez</p>
+  </div>
+  <div class="pain-box">
+    <img src="https://img.icons8.com/ios-filled/50/4b5563/cancel.png" alt="Pérdida de oportunidades">
+    <p>Pérdida de oportunidades por falta de seguimiento</p>
   </div>
 </section>
 
