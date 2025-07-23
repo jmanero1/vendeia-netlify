@@ -12,7 +12,7 @@
     /* HEADER */
     .top-bar {
       width: 100%;
-      height: 180px; /* Ajustado para logo grande */
+      height: 120px; /* Más corta */
       background: #ffffff;
       display: flex;
       justify-content: space-between;
@@ -25,9 +25,9 @@
       z-index: 1000;
     }
     .top-bar img {
-      height: 150px;
+      height: 100px;
     }
-    .top-bar .cta-button {
+    .cta-button {
       background: #0E9384;
       color: white;
       padding: 14px 28px;
@@ -36,8 +36,9 @@
       text-decoration: none;
       border-radius: 6px;
       transition: background 0.3s;
+      display: inline-block;
     }
-    .top-bar .cta-button:hover {
+    .cta-button:hover {
       background: #0c7a6d;
     }
 
@@ -45,7 +46,7 @@
     .hero {
       background: linear-gradient(90deg, #0E9384, #29CCB1);
       height: 600px;
-      margin-top: 180px;
+      margin-top: 120px; /* Ajustado a nueva barra */
       display: flex;
       justify-content: flex-start;
       align-items: center;
@@ -56,10 +57,18 @@
       text-align: left;
     }
     .hero-text h1 {
-      font-size: 1.8rem; /* Corregido */
+      font-size: 1.8rem;
       font-weight: 800;
       line-height: 1.3;
       margin: 8px 0;
+    }
+    .hero-text .cta-button {
+      margin-top: 20px;
+      background: white;
+      color: #0E9384;
+    }
+    .hero-text .cta-button:hover {
+      background: #f0fdf4;
     }
 
     /* Responsive para móviles */
@@ -127,12 +136,13 @@
   <a href="https://wa.me/34658545910" class="cta-button">Solicita demo</a>
 </div>
 
-<!-- Hero con frase separada y alineada a la izquierda -->
+<!-- Hero con frase y botón debajo -->
 <div class="hero">
   <div class="hero-text">
     <h1>Optimiza tu comunicación</h1>
     <h1>con clientes a través</h1>
     <h1>de WhatsApp</h1>
+    <a href="https://wa.me/34658545910" class="cta-button">Solicita demo</a>
   </div>
 </div>
 
@@ -161,4 +171,3 @@
 
 </body>
 </html>
-
