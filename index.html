@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>VendeIA | Automatiza tu WhatsApp Business</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
     body { background: #ffffff; color: #1f2937; }
@@ -60,22 +60,31 @@
     /* WhatsApp badge */
     .whatsapp-badge {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       margin-bottom: 20px;
     }
     .whatsapp-badge img {
       width: 50px;
       height: 50px;
-      margin-right: 20px; /* MÁS ESPACIO ENTRE LOGO Y TEXTO */
+      margin-right: 20px;
     }
+
+    /* Línea vertical */
+    .divider {
+      width: 1px;
+      height: 50px;
+      background-color: white;
+      margin-right: 20px;
+    }
+
     .badge-text {
       display: flex;
       flex-direction: column;
-      font-weight: 700;
-      font-size: 1.2rem; /* Texto más grande */
+      font-weight: 300; /* Letras más finas */
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
       line-height: 1.4;
-      text-transform: uppercase; /* MAYÚSCULAS */
-      letter-spacing: 1px; /* un poco de espacio entre letras */
     }
 
     /* Hero main text */
@@ -106,6 +115,9 @@
       }
       .hero-text h1 {
         font-size: 1.4rem;
+      }
+      .divider {
+        display: none; /* Ocultar línea en móvil */
       }
     }
 
@@ -161,9 +173,10 @@
 <!-- Hero con WhatsApp badge y texto -->
 <div class="hero">
   <div class="hero-content">
-    <!-- Logo WhatsApp + Texto -->
+    <!-- Logo WhatsApp + Línea + Texto -->
     <div class="whatsapp-badge">
       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo">
+      <div class="divider"></div>
       <div class="badge-text">
         <span>BUSINESS</span>
         <span>SOLUTION</span>
