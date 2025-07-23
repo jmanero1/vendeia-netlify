@@ -41,16 +41,29 @@
       background: #0c7a6d;
     }
 
-    /* HERO SECTION (vacía con fondo verde más grande) */
+    /* HERO SECTION */
     .hero {
       background: linear-gradient(90deg, #0E9384, #29CCB1);
-      height: 600px; /* más alto para cubrir pantalla */
-      margin-top: 100px; /* espacio por la barra fija */
+      height: 600px;
+      margin-top: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin: 10px 0;
     }
 
     /* SECTIONS */
     .section {
-      padding: 80px 20px; /* más espacio para que empiece más abajo */
+      padding: 80px 20px;
       max-width: 1100px;
       margin: auto;
       text-align: center;
@@ -97,8 +110,12 @@
   <a href="https://wa.me/34658545910" class="cta-button">Solicita demo</a>
 </div>
 
-<!-- Hero vacío -->
-<div class="hero"></div>
+<!-- Hero con frase separada en 3 líneas -->
+<div class="hero">
+  <h1>Optimiza tu comunicación</h1>
+  <h1>con clientes a través</h1>
+  <h1>de WhatsApp</h1>
+</div>
 
 <!-- Sección inferior -->
 <section class="section">
