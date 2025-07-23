@@ -94,9 +94,9 @@
     /* Bocadillo de conversación */
     .speech-bubble {
       position: absolute;
-      top: 50%;
+      top: 30%; /* Mueve el bocadillo hacia arriba */
       left: 60%; /* Coloca el bocadillo más cerca de la imagen y lo centra */
-      transform: translateY(-50%);
+      transform: translateY(-50%) translateX(30%); /* Mueve el bocadillo a la derecha desde la imagen */
       background-color: #f1f5f9; /* Color gris */
       padding: 12px 20px;
       border-radius: 12px;
@@ -104,7 +104,8 @@
       color: #1f2937;
       font-weight: 600;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      max-width: 200px; /* Limita el tamaño del bocadillo */
+      max-width: 300px; /* Limita el tamaño del bocadillo */
+      word-wrap: break-word; /* Asegura que el texto largo se ajuste al contenedor */
     }
 
     .speech-bubble::after {
@@ -239,7 +240,7 @@
   <div class="hero-image">
     <img src="ChatGPT Image 23 jul 2025, 22_17_52.png" alt="Persona con teléfono móvil">
   </div>
-  <div class="speech-bubble">¡Hola!</div> <!-- Bocadillo con texto -->
+  <div class="speech-bubble">¡Hola Daniel! Necesitaría tener más información de sus servicios.</div> <!-- Bocadillo con texto actualizado -->
 </div>
 
 <!-- Big Question -->
