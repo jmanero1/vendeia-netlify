@@ -53,6 +53,7 @@
       align-items: center;
       color: white;
       padding: 0 40px;
+      position: relative; /* Para poder posicionar la imagen de forma absoluta */
     }
 
     .hero-text {
@@ -77,15 +78,15 @@
     }
 
     .hero-image {
-      display: flex;
-      justify-content: flex-start; /* Alinea la imagen a la izquierda */
-      align-items: center;
-      margin-left: 800px; /* Aumentamos este valor para mover la imagen más a la derecha */
+      position: absolute; /* Posición absoluta para mover la imagen fuera del flujo normal */
+      right: 0; /* La coloca en el borde derecho */
+      transform: translateX(-50%); /* Mueve la imagen hacia el centro de la parte derecha */
+      bottom: 0; /* Alinea la imagen hacia la parte inferior */
+      margin-right: 30px; /* Ajusta la imagen para que no esté pegada al borde */
     }
 
     .hero-image img {
       max-width: 30%; /* Imagen más grande (30%) */
-      max-height: 30%; /* Limita la altura de la imagen */
       object-fit: contain; /* Mantiene la proporción de la imagen */
       border-radius: 15px; /* Bordes curvados */
     }
