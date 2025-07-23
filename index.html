@@ -3,159 +3,152 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VendeIA - Automatiza tu negocio con WhatsApp</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <title>VendeIA | Automatiza tu WhatsApp Business</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+    body { background: #ffffff; color: #1f2937; }
 
-    body {
+    /* HEADER */
+    .top-bar {
+      width: 100%;
+      height: 80px;
       background: #ffffff;
-      color: #1f2937;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 40px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
     }
-
-    header {
-      background: #0f766e;
+    .top-bar img {
+      height: 50px;
+    }
+    .top-bar .cta-button {
+      background: #0E9384;
       color: white;
-      padding: 60px 20px 40px;
-      text-align: center;
-    }
-
-    header img {
-      height: 100px;
-      margin-bottom: 20px;
-    }
-
-    header h1 {
-      font-size: 2.2rem;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1rem;
-      max-width: 600px;
-      margin: 0 auto 30px;
-      line-height: 1.6;
-    }
-
-    .cta-button {
-      background: white;
-      color: #0f766e;
       padding: 12px 24px;
-      border-radius: 6px;
+      font-size: 1rem;
       font-weight: 600;
       text-decoration: none;
-      font-size: 1rem;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+    .top-bar .cta-button:hover {
+      background: #0c7a6d;
     }
 
+    /* HERO SECTION */
+    header {
+      background: linear-gradient(90deg, #0E9384, #29CCB1);
+      color: white;
+      padding: 140px 20px 80px; /* Extra space for fixed header */
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    header p {
+      max-width: 600px;
+      margin: 0 auto 30px;
+      font-size: 1.2rem;
+    }
+    .hero-btn {
+      background: white;
+      color: #0E9384;
+      padding: 14px 28px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+    .hero-btn:hover {
+      background: #e0f7f4;
+    }
+
+    /* SECTIONS */
     .section {
       padding: 60px 20px;
       max-width: 1100px;
       margin: auto;
       text-align: center;
     }
-
     .section h2 {
-      font-size: 1.8rem;
-      margin-bottom: 20px;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #0E9384;
     }
-
     .features {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 30px;
-      margin-top: 30px;
     }
-
     .feature {
-      background: #f1f5f9;
-      border-radius: 10px;
+      background: #f8fafc;
       padding: 30px;
-      flex: 1 1 280px;
-      text-align: left;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      border-radius: 12px;
+      flex: 1 1 300px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     }
-
     .feature h3 {
-      color: #0f766e;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
+      color: #0E9384;
     }
 
+    /* FOOTER */
     footer {
       background: #1f2937;
       color: white;
-      text-align: center;
       padding: 30px 20px;
+      text-align: center;
       font-size: 0.9rem;
-    }
-
-    .whatsapp-button {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25d366;
-      color: white;
-      padding: 14px 22px;
-      border-radius: 40px;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="vendeia_logo_blanco.png" alt="VendeIA logo" />
-    <h1>Automatiza tu negocio con WhatsApp e inteligencia artificial</h1>
-    <p>VendeIA configura y gestiona tu asistente virtual para que respondas mensajes 24/7, aumentes ventas y ahorres tiempo. Todo sin conocimientos técnicos.</p>
-    <a href="https://wa.me/34658545910" class="cta-button">Solicita tu demo gratuita</a>
-  </header>
 
-  <section class="section">
-    <h2>¿Por qué elegir VendeIA?</h2>
-    <div class="features">
-      <div class="feature">
-        <h3>Disponible 24/7</h3>
-        <p>Tu asistente virtual responde mensajes a cualquier hora, incluso cuando tú estás ocupado o cerrado.</p>
-      </div>
-      <div class="feature">
-        <h3>Diseñado para pequeñas empresas</h3>
-        <p>No necesitas saber programar. Lo configuramos por ti en 24h según tu tipo de negocio.</p>
-      </div>
-      <div class="feature">
-        <h3>Incrementa tus ventas</h3>
-        <p>Reduce el tiempo de respuesta, no pierdas clientes potenciales y mejora tu atención al cliente.</p>
-      </div>
+<!-- Top Bar -->
+<div class="top-bar">
+  <img src="vendeia_logo.png" alt="VendeIA Logo">
+  <a href="https://wa.me/34658545910" class="cta-button">Solicita demo</a>
+</div>
+
+<!-- Hero -->
+<header>
+  <h1>Resuelve los pains de comunicación por WhatsApp</h1>
+  <p>Conecta tu empresa con clientes usando un asistente virtual potente, fácil de usar y disponible 24/7.</p>
+  <a href="https://wa.me/34658545910" class="hero-btn">Habla con nosotros</a>
+</header>
+
+<section class="section">
+  <h2>La mejor experiencia conversacional para tu empresa</h2>
+  <div class="features">
+    <div class="feature">
+      <h3>Automatización sin código</h3>
+      <p>Crea flujos conversacionales sin conocimientos técnicos para optimizar la atención.</p>
     </div>
-  </section>
-
-  <section class="section">
-    <h2>¿Cómo funciona?</h2>
-    <div class="features">
-      <div class="feature">
-        <h3>1. Te contactas</h3>
-        <p>Nos cuentas sobre tu negocio y necesidades por WhatsApp o email.</p>
-      </div>
-      <div class="feature">
-        <h3>2. Configuramos tu bot</h3>
-        <p>Personalizamos tu asistente y lo conectamos a tu WhatsApp Business.</p>
-      </div>
-      <div class="feature">
-        <h3>3. Empiezas a vender</h3>
-        <p>Tu bot responde, filtra clientes y te ayuda a cerrar ventas automáticamente.</p>
-      </div>
+    <div class="feature">
+      <h3>Integración con tu negocio</h3>
+      <p>Conecta WhatsApp Business, CRM y otros canales fácilmente.</p>
     </div>
-  </section>
+    <div class="feature">
+      <h3>Resolución de consultas en tiempo real</h3>
+      <p>Responde a tus clientes incluso fuera del horario comercial.</p>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    &copy; 2025 VendeIA · Automatización para empresas · vendeia.es
-  </footer>
+<footer>
+  &copy; 2025 VendeIA · Todos los derechos reservados · vendeia.es
+</footer>
 
-  <a href="https://wa.me/34658545910" class="whatsapp-button" target="_blank">Chatea por WhatsApp</a>
 </body>
 </html>
