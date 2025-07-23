@@ -5,7 +5,220 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>VendeIA | Automatiza tu WhatsApp Business</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+    body { background: #ffffff; color: #1f2937; }
+
+    /* HEADER */
+    .top-bar {
+      width: 100%;
+      height: 140px;
+      background: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 40px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+    .top-bar img {
+      height: 140px; /* Logo más grande */
+    }
+    .cta-button {
+      background: #0E9384;
+      color: white;
+      padding: 14px 28px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s;
+      display: inline-block;
+    }
+    .cta-button:hover {
+      background: #0c7a6d;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      background: linear-gradient(90deg, #0E9384, #29CCB1);
+      height: 600px;
+      margin-top: 140px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      color: white;
+      padding-left: 200px;
+    }
+    .hero-content {
+      text-align: left;
+    }
+
+    /* WhatsApp badge */
+    .whatsapp-badge {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .whatsapp-badge img {
+      width: 50px;
+      height: 50px;
+      margin-right: 20px;
+    }
+
+    /* Línea vertical */
+    .divider {
+      width: 1px;
+      height: 50px;
+      background-color: white;
+      margin-right: 20px;
+    }
+
+    .badge-text {
+      display: flex;
+      flex-direction: column;
+      font-weight: 300;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      line-height: 1.4;
+    }
+
+    /* Hero main text */
+    .hero-text h1 {
+      font-size: 1.8rem;
+      font-weight: 800;
+      line-height: 1.3;
+      margin: 8px 0;
+    }
+    .hero-text .cta-button {
+      margin-top: 20px;
+      background: white;
+      color: #0E9384;
+    }
+    .hero-text .cta-button:hover {
+      background: #f0fdf4;
+    }
+
+    /* Responsive Hero */
+    @media (max-width: 768px) {
+      .hero {
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+      }
+      .whatsapp-badge {
+        justify-content: center;
+      }
+      .divider {
+        display: none;
+      }
+      .hero-text h1 {
+        font-size: 1.4rem;
+      }
+    }
+
+    /* BIG QUESTION */
+    .big-question {
+      text-align: center;
+      padding: 80px 20px 40px;
+      background: #ffffff;
+    }
+    .big-question h2 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #0E9384;
+      line-height: 1.3;
+      margin-bottom: 20px;
+    }
+    .big-question .cta-button {
+      background: #0E9384;
+      color: white;
+      font-size: 1.2rem;
+      padding: 16px 32px;
+    }
+
+    @media (max-width: 768px) {
+      .big-question h2 {
+        font-size: 1.8rem;
+        padding: 0 10px;
+      }
+    }
+
+    /* PAIN POINTS */
+    .pain-points {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+    .pain-box {
+      background: #f1f5f9; /* Fondo más oscuro */
+      padding: 20px;
+      border-radius: 12px;
+      flex: 1 1 220px;
+      max-width: 250px;
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 500;
+      color: #1f2937;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .pain-box img {
+      width: 40px;
+      margin-bottom: 10px;
+      filter: grayscale(100%); /* Ícono solo silueta */
+    }
+    .pain-box p {
+      margin-top: 10px;
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    /* SECTIONS */
+    .section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #0E9384;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .feature {
+      background: #f8fafc;
+      padding: 30px;
+      border-radius: 12px;
+      flex: 1 1 300px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .feature h3 {
+      margin-bottom: 15px;
+      color: #0E9384;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #1f2937;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
 
