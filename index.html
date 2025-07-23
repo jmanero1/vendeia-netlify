@@ -49,11 +49,10 @@
       height: 600px;
       margin-top: 80px; /* Ajustamos el margen superior para el header más estrecho */
       display: flex;
-      justify-content: space-between; /* Añadimos espacio entre el texto y la imagen */
+      justify-content: flex-start; /* Espacio entre el texto y la imagen */
       align-items: center;
       color: white;
       padding: 0 40px;
-      overflow: auto; /* Permite el desplazamiento */
     }
 
     .hero-text {
@@ -77,12 +76,6 @@
       background: #f0fdf4;
     }
 
-    .hero-image {
-      max-width: 15%; /* Imagen más pequeña (15%) */
-      display: flex;
-      justify-content: flex-end;
-    }
-
     /* Responsive Hero */
     @media (max-width: 768px) {
       .hero {
@@ -95,13 +88,12 @@
         max-width: 100%;
         margin-bottom: 20px;
       }
-      .hero-image {
-        max-width: 50%; /* Ajustamos el tamaño de la imagen en pantallas pequeñas */
-      }
       .hero-text h1 {
         font-size: 1.4rem;
       }
     }
+
+    /* Rest of the styles remain the same... */
 
   </style>
 </head>
@@ -120,9 +112,6 @@
     <h1>con clientes a través</h1>
     <h1>de WhatsApp</h1>
     <a href="https://wa.me/34658545910" class="cta-button">Solicita demo</a>
-  </div>
-  <div class="hero-image">
-    <img src="ChatGPT Image 23 jul 2025, 22_17_52.png" alt="Persona con teléfono móvil">
   </div>
 </div>
 
