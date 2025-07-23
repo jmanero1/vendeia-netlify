@@ -76,13 +76,17 @@
       background: #f0fdf4;
     }
 
-    .hero-image img {
-      max-width: 20%; /* Imagen más grande (20%) */
-      max-height: 20%; /* Limita la altura de la imagen */
-      object-fit: contain; /* Mantiene la proporción de la imagen */
+    .hero-image {
       display: flex;
-      justify-content: flex-end;
+      justify-content: flex-end; /* Empuja la imagen a la derecha */
       align-items: center;
+      margin-left: auto; /* Alinea la imagen completamente a la derecha */
+    }
+
+    .hero-image img {
+      max-width: 30%; /* Imagen más grande (30%) */
+      max-height: 30%; /* Limita la altura de la imagen */
+      object-fit: contain; /* Mantiene la proporción de la imagen */
       border-radius: 15px; /* Bordes curvados */
     }
 
