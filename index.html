@@ -49,7 +49,7 @@
       height: 600px;
       margin-top: 80px; /* Ajustamos el margen superior para el header más estrecho */
       display: flex;
-      justify-content: space-between; /* Espacio entre el texto y la imagen */
+      justify-content: flex-start; /* Espacio entre el texto y la imagen */
       align-items: center;
       color: white;
       padding: 0 40px;
@@ -79,14 +79,13 @@
 
     .hero-image {
       position: absolute; /* Posición absoluta para mover la imagen fuera del flujo normal */
-      right: 0; /* La coloca en el borde derecho */
-      transform: translateX(-50%); /* Mueve la imagen hacia el centro de la parte derecha */
-      bottom: 0; /* Alinea la imagen hacia la parte inferior */
-      margin-right: 30px; /* Ajusta la imagen para que no esté pegada al borde */
+      right: 10%; /* 10% desde el borde derecho */
+      top: 50%; /* Centra la imagen verticalmente */
+      transform: translateY(-50%); /* Ajuste para centrarla en la parte vertical */
     }
 
     .hero-image img {
-      max-width: 40%; /* Aumentamos el tamaño de la imagen a 40% */
+      max-width: 40%; /* Imagen más grande (40%) */
       object-fit: contain; /* Mantiene la proporción de la imagen */
       border-radius: 15px; /* Bordes curvados */
     }
